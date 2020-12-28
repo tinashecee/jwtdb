@@ -6,9 +6,10 @@ const sequelize = new Sequelize(
   config.USER,
   config.PASSWORD,
   {
+    host: config.HOST,
     dialect: config.dialect,
     operatorsAliases: false,
-    connectionString:config.DATABASE_URL,
+    database_url:config.DATABASE_URL,
 
 
     pool: {
